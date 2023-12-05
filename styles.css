@@ -1,0 +1,76 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.calculator {
+    width: 300px;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    text-align: center;
+}
+
+.calculator-header h1 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.display-container {
+    position: relative;
+}
+
+#d {
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 4px;
+    background-color: #444;
+    color: #fff;
+}
+
+.backspace-button {
+    position: absolute;
+    top: 43%;
+    right: 0px;
+    transform: translateY(-50%);
+    padding: 10px;
+    font-size: 1.3em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #f44336; /* Red color for the backspace button */
+    color: #fff;
+}
+
+.backspace-button:active {
+    background-color: #d32f2f; /* Darker red for active state */
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 15px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #555;
+    color: #fff;
+}
+
+button:active {
+    background-color: #777;
+}
